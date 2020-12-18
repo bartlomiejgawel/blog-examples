@@ -1,0 +1,11 @@
+﻿serviceName -> SERVICE_NAME
+serviceName (concatenated) -> SERVICE_CONCATENATED_NAME
+serviceName (lowercase) -> SERVICE_LOWERCASE_NAME
+serviceName (concatenated && lowercase) -> SERVICE_CONCATENATED_AND_LOWERCASE_NAME
+---#if (customChoice=="first")
+customChoice -> first
+---#elseif (customChoice=="second")
+customChoice -> second
+---#else
+customChoice -> none
+---#endif
