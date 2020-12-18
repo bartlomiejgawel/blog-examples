@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>Custom.Templates</PackageId>
+    <Title>Custom Templates</Title>
+    <Authors>Me</Authors>
+    <Description>Custom Templates</Description>
+    <PackageTags>dotnet-new;templates</PackageTags>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\.vs\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
